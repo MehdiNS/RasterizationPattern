@@ -1,17 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Fichiers sources">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Fichiers de ressources">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="FrameBuffer.cpp" />
+    <ClCompile Include="Gui.cpp" />
+    <ClCompile Include="imgui_impl_glfw_gl3.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Dependencies\glad\glad.c" />
+    <ClCompile Include="Dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_draw.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="Gui.h" />
+    <ClInclude Include="imgui_impl_glfw_gl3.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="Uncopiable.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="Dependencies\glad\glad.h" />
+    <ClInclude Include="Dependencies\glad\khrplatform.h" />
+    <ClInclude Include="Dependencies\imgui\imgui.h" />
+    <ClInclude Include="Dependencies\imgui\imconfig.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_internal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Blit.frag" />
+    <None Include="Shaders\Blit.vert" />
+    <None Include="Shaders\SecondPass.frag" />
+    <None Include="Shaders\SecondPass.vert" />
+    <None Include="Shaders\FirstPassTri.vert" />
+    <None Include="Shaders\FirstPassTri.frag" />
+    <None Include="Shaders\FirstPassQuad.frag" />
+    <None Include="Shaders\FirstPassQuad.vert" />
   </ItemGroup>
 </Project>
