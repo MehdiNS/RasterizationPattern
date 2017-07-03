@@ -14,10 +14,10 @@
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="Util.cpp" />
     <ClCompile Include="Window.cpp" />
-    <ClCompile Include="Dependencies\glad\glad.c" />
-    <ClCompile Include="Dependencies\imgui\imgui.cpp" />
-    <ClCompile Include="Dependencies\imgui\imgui_demo.cpp" />
-    <ClCompile Include="Dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="thirdparty\glad\glad.c" />
+    <ClCompile Include="thirdparty\imgui\imgui.cpp" />
+    <ClCompile Include="thirdparty\imgui\imgui_demo.cpp" />
+    <ClCompile Include="thirdparty\imgui\imgui_draw.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h" />
@@ -34,11 +34,10 @@
     <ClInclude Include="Uncopiable.h" />
     <ClInclude Include="Util.h" />
     <ClInclude Include="Window.h" />
-    <ClInclude Include="Dependencies\glad\glad.h" />
-    <ClInclude Include="Dependencies\glad\khrplatform.h" />
-    <ClInclude Include="Dependencies\imgui\imgui.h" />
-    <ClInclude Include="Dependencies\imgui\imconfig.h" />
-    <ClInclude Include="Dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="thirdparty\glad\glad.h" />
+    <ClInclude Include="thirdparty\glad\khrplatform.h" />
+    <ClInclude Include="thirdparty\imgui\imgui.h" />
+    <ClInclude Include="thirdparty\imgui\imgui_internal.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="image.png" />
